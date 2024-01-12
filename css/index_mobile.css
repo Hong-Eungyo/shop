@@ -1,0 +1,185 @@
+@media all and (max-width: 800px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-size: 10pt;
+        color: #333;
+    }
+
+    header {
+        position: relative;
+        clear: both;
+        width: 340px;
+        height: 130px;
+        margin: 0 auto;
+    }
+
+    /* 헤더 상단 1행 전체 시작 */
+    .header_box_all {
+        position: relative;
+        clear: both;
+        width: 340px;
+        height: 130px;
+        display: grid;
+        grid-template-columns: 340px;
+        grid-template-rows: 50px 50px 30px;
+        
+    
+    }
+        /* 헤더 상단 1행 (global) - left */
+        .header_box_all > .header_box_01 {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 50px;
+            line-height: 50px;
+            top: 10px;
+        }
+
+        #header_box_01_up {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 30px;
+        }
+            #sec_global {
+                position: relative;
+                float: left;
+                width: 170px;
+                height: 30px;
+                line-height: 30px;
+            }
+                select {
+                    position: relative;
+                    float: left;
+                    width: 100px;
+                    height: 30px;
+                }
+
+            option {
+                width: 50px;
+                height: 30px;
+            }
+        #ins_all {
+            width: 150px;
+            height: 30px;
+        }
+        #ins_icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+    #header_box_01_down {
+        display: none;
+    }
+
+    /* 헤더 상단 1행(logo) - center */
+    .header_box_all > .header_box_02 {
+        position: relative;
+        clear: both;
+        width: 340px;
+        height: 50px;
+    }
+
+    /* 헤더 상단 1행 (회원가입) - right */
+    .header_box_all > .header_box_03 {
+        position: relative;
+        clear: both;
+        width: 340px;
+        height: 30px;
+        background: #f60;
+    }
+        #header_box_03_up {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 85px);
+            grid-template-rows: 30px;
+        }
+            #txt_join, #txt_id, #txt_basket, #txt_mypage {
+                line-height: 30px;
+                text-align: center;
+                font-size: 0.8rem;
+            }
+
+        #header_box_03_down {
+            display: none;
+        }
+    /* 여백 삭제 */
+    .gap_1400_10 {
+        display: none;
+    }
+    /* 메인 메뉴 9개 시작 */
+    .main_menu_all {
+        display: flex;
+        flex-flow: row wrap;
+        width: 340px;
+        height: 90px;
+        margin: 0 auto;
+    }
+        .main_menu_all #menu_each {
+            width: 110px; 
+            /* 정확한 크기로 제작할 때는 113.33px로 변경
+                340/3
+            */
+        }
+
+      
+        /* 여백 삭제 */
+        .gap_1400_10 {
+            display: none;
+        }
+
+        /* 메인 이미지 (main_img_all) 시작 */
+        .main_img_all {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 340px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+            .main_img_big {
+                display: none;
+            }
+
+            .main_img_small {
+                display: block;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 340px;
+                height: 340px;
+                margin-top: 10px;
+                z-index: 2;
+                background: url(../img/main_title_img_02.jpg) no-repeat;
+                background-size: cover;
+
+                -webkit-animation-duration: 2s;
+                -webkit-animation-name: m_01;
+                -webkit-animation-iteration-count: 1;
+            }
+
+            @-webkit-keyframes m_01 {
+                0% { left: 50px; top:50px; opacity: 50%;}
+                100% {left: 0px; top: 0px; opacity: 100%;}
+            }
+            /* 여백 (w: 1400, h: 80 )은 숨김 */
+            .gap_1400_80 {
+                display: none;
+            }
+            /* 여백 (w: 340, h:10) 표시  */
+            .gap_m_340_10 {
+                display: block;
+                position: relative;
+                clear: both;
+                width: 100%;
+                height: 10px;
+                background: #ddd;
+            }
+}

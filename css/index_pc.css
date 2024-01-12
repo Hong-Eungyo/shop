@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-size: 10pt;
+    color: #333;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:link, a:active, a:visited {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 0, 200);
+    text-decoration: none;
+}
+header {
+    position: relative;
+    clear: both;
+    width: 1400px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* 헤더 상단 1행 전체 시작 */
+.header_box_all {
+    position: relative;
+    clear: both;
+    width: 1400px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 400px 600px 400px;
+    grid-template-rows: 100px;
+}
+    /* 헤더 상단 1행 (global) - left */
+    .header_box_all > .header_box_01 {
+        width: 400px;
+        height: 100px;
+    }
+
+        #header_box_01_up {
+            position:  relative;
+            clear: both;
+            width: 400px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+            #sec_global {
+                position: relative;
+                float: left;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+            }
+                select {
+                    /* -webkit-appearance: none; 드롭다운 기본 설정 해제할 때 사용*/
+                    position: relative;
+                    float: left;
+                    width: 100px;
+                    height: 30px;
+                }
+
+                option {
+                    width: 50px;
+                    height: 30px;
+                }
+
+                #ins_all {
+                    display: grid;
+                    grid-template-columns: repeat(5, 30px);
+                    grid-template-rows: 30px;
+                    width: 150px;
+                    height: 30px;
+                }
+
+                #ins_icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+        #header_box_01_down {
+            position: relative;
+            clear: both;
+            width: 400px;
+            height: 50px;
+        }
+    /* 헤더 상단 1행 (logo) - center */
+    .header_box_all > .header_box_02 {
+        width: 600px;
+        height: 100px;
+    }
+
+    /* 헤서 상단 1행 (회원가입) - right */
+    .header_box_all > .header_box_03 {
+        position: relative;
+        width: 400px;
+        height: 100px;
+    }
+
+    #header_box_03_up {
+        position: relative;
+        clear: both;
+        width: 400px;
+        height: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: 50px;
+    }
+        #txt_join, #txt_id, #txt_basket, #txt_mypage {
+            line-height: 50px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+    #header_box_03_down {
+        position: relative;
+        clear: both;
+        width: 400px;
+        height: 50px;
+    }
+
+/* 헤더 상단 1행 다음 1번째 여백 시작 */
+.gap_1400_10 {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 10px;
+    background: #999;
+}
+
+/* 메인 메뉴 9개 시작 */
+.main_menu_all {
+    position: relative;
+    clear: both;
+    width: 1400px;
+    height: 30px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.main_menu_all #menu_each {
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+#menu_each:hover {
+    color: #333;
+}
+    .red-point{
+        color: red;
+    }
+    .red-point:hover {
+        color: rgb(255, 0, 200);
+    }
+
+
+/* 헤더 상단 1행 다음 2번째 여백시작 */
+.gap_1200_10 {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 10px;   
+}
+
+/* 메인 이미지 (main_img_all) 시작 */
+.main_img_all {
+    position: relative;
+    clear: both;
+    width: 1400px;
+    height: 600px;
+    margin: 0 auto;
+}
+    .main_img_big {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 1400px;
+        height: 600px;
+    }
+
+    .main_img_small {
+        display: none;
+    }
+
+/* 여백 (w: 1400, h:80)은 표시 */
+.gap_1400_80 {
+    display: block;
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 80px;
+    background: #999;
+    margin: 0 auto;
+}
+
+/* 여백 (w: 340, h:10)은 숨김 */
+.gap_m_340_10 {
+    display: none;
+}
