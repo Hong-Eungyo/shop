@@ -67,9 +67,15 @@
             height: 30px;
         }
         #ins_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 30px;
             height: 30px;
             margin-left: 10px;
+        }
+        #ins_icon > img {
+            width: 20px;
         }
     #header_box_01_down {
         display: none;
@@ -79,8 +85,14 @@
     .header_box_all > .header_box_02 {
         position: relative;
         clear: both;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 340px;
         height: 50px;
+    }
+    .header_box_02 > a >  img {
+        width:  300px;
     }
 
     /* 헤더 상단 1행 (회원가입) - right */
@@ -180,6 +192,217 @@
                 clear: both;
                 width: 100%;
                 height: 10px;
-                background: #ddd;
+                /* background: #ddd; */
             }
+
+            .gap_m_340_30 {
+                display: block;
+                position: relative;
+                clear: both;
+                width: 100%;
+                height: 30px;
+                /* background: #ddd; */
+            }
+
+            /* 상단 이미지 4개 시작 */
+            section.sec_01_all {
+                position: relative;
+                clear: both;
+                width: 340px;
+                height: 1360px;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+            .sec_01_all > .sec_01_box_all {
+                display: flex;
+                flex-flow: column nowrap;
+                width: 340px;
+                height: 1360px;
+            }
+            .sec_01_box_all > #sec_01_box_each {
+                display: flex;
+                flex-flow: column nowrap;
+                width: 340px;
+                height: 380px;
+            }
+            #sec_01_box_img {
+                width: 340px;
+                height: 280px;
+            }
+            #sec_01_font_01 {
+                width: 340px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            #sec_01_font_02 {
+                width: 340px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 0.9rem;
+                font-weight: bold;
+                text-align: center;
+                white-space: nowrap;
+            }
+            .left-slide {
+                height: 100%;
+            }
+            .right-slide {
+                height: 100%;
+            }
+            /* 트랜드픽 시작 */
+            .sec_02_all {
+                position: relative;
+                clear: both;
+                width: 340px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .sec_02_title-container {
+                width: 340px;
+                height: 50px;
+                display: flex;
+                flex-flow: column;
+                margin-top: 50px;
+            }
+                .sec_02_title {
+                    font-size: 2rem;
+                    color: #0d0d0d;
+                    margin-bottom: 5px;
+                }
+                .sec_02_sub_title {
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    color: #757575;
+                }
+            .sec_02_box_all {
+                width: 340px;
+                display: flex;
+                flex-flow: row;
+                justify-content:center;
+                align-items: center;
+            }
+
+            #sec_02_box {
+                position: relative;
+                display: none;
+                flex-flow: column nowrap;
+                width: 340px;
+                height: 470px;
+                margin-bottom: 10px;
+            }
+
+            #sec_02_box.selected {
+                display: flex;
+            }
+
+            .more {
+                position: absolute;
+                right: 0;
+                top: 50px;
+                width: 340px;
+                text-align: right;
+                cursor: pointer;
+            }
+            .color-palette {
+                width: 340px;
+                height: 30px;
+                column-gap: 5px;
+            }
+            #sec_02_box .sec_02_font_01 {
+                font-size: 1rem;
+            }
+            
+            #sec_02_box .sec_02_font_02 {
+                margin: 3px 0;
+             }
+
+             /* winter season 시작 */
+             .sec_03_all {
+                position: relative;
+                clear: both;
+                width: 340px;
+                margin: 0 auto;
+                
+            }
+            .sec_03_title-container {
+                width: 340px;
+                height: 50px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+                .sec_03_title {
+                    font-size: 2rem;
+                    color: #0d0d0d;
+                    margin-bottom: 5px;
+                }
+                .sec_03_sub_title {
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    color: #757575;
+                }
+            
+            .sec_03_box_all {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 340px;
+            }
+            #sec_03_box {
+                position: relative;
+                display: none;
+                flex-flow: column nowrap;
+                width: 340px;
+                height: 470px;
+                margin-bottom: 10px;
+            }
+            #sec_03_box.selected {
+                display: flex;
+            }
+        
+            #sec_03_box .sec_03_font_01 {
+                font-size: 1rem;
+            }
+            
+            #sec_03_box .sec_03_font_02 {
+                margin: 3px 0;
+            }
+
+            #sec_03_box .sec_03_font_03 {
+                font-weight: bold;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+           }
+       
+           #sec_03_box .sec_03_font_04 {
+               margin-top: 5px;
+               font-size: 0.8rem;
+           }
+
+        /* weekly best 제목 시작 */
+        .title_weekly {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 50px;
+            color: #333;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 auto;
+            background: #ddd;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+       
+
 }

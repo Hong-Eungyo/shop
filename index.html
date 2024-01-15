@@ -8,6 +8,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
       </style>
+    <!-- 구글 아이콘 추가 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       <!-- CSS -->
       <link rel="stylesheet" href="css/index_pc.css">
       <link rel="stylesheet" href="css/index_mobile.css">
@@ -93,7 +95,7 @@
         <!-- 1번째 메인 메뉴 -->
         <a href="#" target="_blank">
             <div id="menu_each">
-                <span id="menu_01_over">MADE.J</span>
+                <span class="red-point" id="menu_01_over">MADE.J</span>
             </div>
         </a>
         <!-- 2번째 메인 메뉴 -->
@@ -152,7 +154,7 @@
     <!-- 메인 이미지 (main_title_img) 시작 -->
     <div class="main_img_all">
         <div class="main_img_big">  <!--PC 화면 메인 이미지 (1400 * 600) -->
-            <img src="img/main_title_img_01.jpg" width="100%">
+            <!-- <img src="img/main_title_img_01.jpg" width="100%"> -->
         </div>
         <div class="main_img_small">  <!-- Mobile 화면 메인 이미지 (340 * 340)-->
             <!-- <img src="img/main_title_img_02.jpg" width="100%"> -->
@@ -162,6 +164,200 @@
     <div class="gap_1400_10">
         <!-- 여백 -->
     </div>
+    <!-- 여백 (w:100%, h:80) -->
+    <div class="gap_1400_80">&nbsp;</div>
+    <!-- 여백 (w:100%, h:10) -->
+    <div class="gap_m_340_10">&nbsp;</div>
 
+    <!-- 상단 이미지 4개 -->
+    <section class="sec_01_all">
+        <div class="sec_01_box_all">
+
+            <!-- 박스 1번째 시작 -->
+            <div id="sec_01_box_each">
+                <p id="sec_01_box_font">New 10%</p>
+                <p id="sec_01_box_img">
+                    <img src="img/section_row_01_img_01.jpg" width="340" alt="340X280">
+                </p>
+                <p id="sec_01_font_01">
+                    매일 오전 10시 오픈
+                </p>
+                <p id="sec_01_font_02">
+                    3일간 10% 할인 득템 기회!
+                </p>
+            </div>
+
+            <!-- 박스 2번째 시작 -->
+            <div id="sec_01_box_each">
+                <p id="sec_01_box_font">BEST</p>
+                <p id="sec_01_box_img">
+                    <img src="img/section_row_01_img_02.jpg" width="340" alt="340X280">
+                </p>
+                <p id="sec_01_font_01">
+                    JUSTONE BEST
+                </p>
+                <p id="sec_01_font_02">
+                    저스트원의 인기상품 베스트 100
+                </p>
+            </div>
+
+            <!-- 박스 3번째 시작 -->
+            <div id="sec_01_box_each">
+                <p id="sec_01_box_font">Outer</p>
+                <p id="sec_01_box_img">
+                    <img src="img/section_row_01_img_03.jpg" width="340" alt="340X280">
+                </p>
+                <p id="sec_01_font_01">
+                    WINTER OUTER
+                </p>
+                <p id="sec_01_font_02">
+                    갈수록 차가워지는 날씨에 꼭 필요한 아우터
+                </p>
+            </div>
+
+            <!-- 박스 4번째 시작 -->
+            <div id="sec_01_box_each">
+                <p id="sec_01_box_font">Acc</p>
+                <p id="sec_01_box_img">
+                    <img src="img/section_row_01_img_04.jpg" width="340" alt="340X280">
+                </p>
+                <p id="sec_01_font_01">
+                    WINTER ACCESSORY
+                </p>
+                <p id="sec_01_font_02">
+                    따뜻한 겨울 보내기
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <div class="gap_1400_80">&nbsp;</div>
+    <div class="gap_m_340_30">&nbsp;</div>
+<!-- trend pick 시작 -->
+    <section class="sec_02_all">
+        <div class="sec_02_title-container">
+            <h2 class="sec_02_title">TREND Pick</h2>
+            <p class="sec_02_sub_title">저스트원이 선택한 주목상품!</p>
+            <p class="more">더 보기 > </p>
+        </div>
+        <div class="sec_02_box_all">
+            <div class="left-slide">
+                <span class="material-symbols-outlined">
+                    chevron_left
+                    </span>
+            </div>
+            <div id="sec_02_box" class="selected">
+                <img id="sec_02_box_img" src="img/trend_01.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background :#F7F0D7">&nbsp;</span><span class="color" style="background: #AAAAAA">&nbsp;</span><span class="color" style="background :#494D46">&nbsp;</span></div>
+                <p class="sec_02_font_01">따뜻기모 물결 플라워 반목티</p>
+                <p class="sec_02_font_02">FREE</p>
+                <p class="sec_02_font_03"><span class="original_price">26,000원</span>22,800원<span class="discount">15%</span></p>
+                <p class="sec_02_font_04">리뷰 : 10개</p>
+            </div>
+            <div id="sec_02_box">
+                <img id="sec_02_box_img" src="img/trend_02.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background: #FCFBE8">&nbsp;</span><span class="color" style="background: #EBA973">&nbsp;</span><span class="color" style="background: #062266">&nbsp;</span></div>
+                <p class="sec_02_font_01">시에라 레이스 카라넥블라우스</p>
+                <p class="sec_02_font_02">FREE</p>
+                <p class="sec_02_font_03"><span class="original_price">41,000원</span>35,600원<span class="discount">15%</span></p>
+            </div>
+            <div id="sec_02_box">
+                <img id="sec_02_box_img" src="img/trend_03.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background: #F7F0D7">&nbsp;</span><span class="color" style="background: #E89EBF">&nbsp;</span><span class="color" style="background: #AAAAAA">&nbsp;</span><span class="color" style="background: #062266">&nbsp;</span></div>
+                <p class="sec_02_font_01">낙낙한핏 브이넥 꽈배기 롱니트</p>
+                <p class="sec_02_font_02">FREE</p>
+                <p class="sec_02_font_03"><span class="original_price">24,000원</span>21,100원<span class="discount">15%</span></p>
+                <p class="sec_02_font_04">리뷰 : 1개</p>
+            </div>
+            <div id="sec_02_box">
+                <img id="sec_02_box_img" src="img/trend_04.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background: #FDFFF0">&nbsp;</span><span class="color" style="background: #BA5A06">&nbsp;</span><span class="color" style="background: #F43029">&nbsp;</span><span class="color" style="background: #309953">&nbsp;</span><span class="color" style="background: #586129">&nbsp;</span><span class="color" style="background: #000000">&nbsp;</span></div>
+                <p class="sec_02_font_01">크레파스 플리스기모 밴딩팬츠</p>
+                <p class="sec_02_font_02">S,M,L</p>
+                <p class="sec_02_font_03"><span class="original_price">43,500원</span>37,000원<span class="discount">15%</span></p>
+                <p class="sec_02_font_04">리뷰 : 3개</p>
+            </div>
+            <div id="sec_02_box">
+                <img id="sec_02_box_img" src="img/trend_05.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background: #F7F0D7">&nbsp;</span><span class="color" style="background: #7D6146">&nbsp;</span><span class="color" style="background: #000000">&nbsp;</span></div>
+                <p class="sec_02_font_01">후끈하게 밍크기모 핀턱슬랙스</p>
+                <p class="sec_02_font_02">FREE,L</p>
+                <p class="sec_02_font_03"><span class="original_price">41,200원</span>35,600원 <span class="discount">15%</span></p>
+                <p class="sec_02_font_04">리뷰 : 4개</p>
+            </div>
+            <div class="right-slide">
+                <span class="material-symbols-outlined">
+                    chevron_right
+                    </span>
+            </div>
+        </div>
+    </section>
+    <div class="gap_1400_80">&nbsp;</div>
+    <div class="gap_m_340_30">&nbsp;</div>
+    <!-- winter season 시작 -->
+    <section class="sec_03_all">
+        <div class="sec_03_title-container">
+            <h2 class="sec_03_title">Winter season</h2>
+            <p class="sec_03_sub_title">#한겨울템 #한파대비</p>
+            <p class="more">더 보기 > </p>
+        </div>
+        <div class="sec_03_box_all">
+            <div class="left-slide">
+                <span class="material-symbols-outlined">
+                    chevron_left
+                    </span>
+            </div>
+            <div id="sec_03_box" class="selected">
+                <img id="sec_03_box_img" src="img/winter_season_01.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background :#000000">&nbsp;</span></div>
+                <p class="sec_03_font_01">한파대비 스판 블랙팬츠(일자/부츠컷)</p>
+                <p class="sec_03_font_02">S,M,L</p>
+                <p class="sec_03_font_03">29,800원</p>
+                <p class="sec_03_font_04">리뷰 : 4개</p>
+            </div>
+            <div id="sec_03_box">
+                <img id="sec_03_box_img" src="img/winter_season_02.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background :#FDFFF0">&nbsp;</span><span class="color" style="background : #84B4CE">&nbsp;</span><span class="color" style="background : #AAAAAA">&nbsp;</span><span class="color" style="background :#000000">&nbsp;</span></div>
+                <p class="sec_03_font_01">따듯함이 남다른 융털티셔츠</p>
+                <p class="sec_03_font_02">FREE</p>
+                <p class="sec_03_font_03">18,500원</p>
+                <p class="sec_03_font_04">리뷰 : 5개</p>
+            </div>
+            <div id="sec_03_box">
+                <img id="sec_03_box_img" src="img/winter_season_03.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background :#F7F0D7">&nbsp;</span><span class="color" style="background :#494D46">&nbsp;</span></div>
+                <p class="sec_03_font_01">아르덴 플리스안감 양털집업</p>
+                <p class="sec_03_font_02">FREE</p>
+                <p class="sec_03_font_03">99,500원</p>
+            </div>
+            <div id="sec_03_box">
+                <img id="sec_03_box_img" src="img/winter_season_04.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background :#FDFFF0">&nbsp;</span><span class="color" style="background :#E89EBF">&nbsp;</span><span class="color" style="background :#482A14">&nbsp;</span><span class="color" style="background :#062266">&nbsp;</span><span class="color" style="background :#000000">&nbsp;</span></div>
+                <p class="sec_03_font_01">코니 심플한 덕다운패딩</p>
+                <p class="sec_03_font_02">FREE</p>
+                <p class="sec_03_font_03">84,800원</p>
+                <p class="sec_03_font_04">리뷰 : 1개</p>
+            </div>
+            <div id="sec_03_box">
+                <img id="sec_03_box_img" src="img/winter_season_05.gif" width="100%">
+                <div class="color-palette"><span class="color" style="background :#FCFBE8">&nbsp;</span><span class="color" style="background :#030A3A">&nbsp;</span></div>
+                <p class="sec_03_font_01">브랜드핏 오리털 하프패딩</p>
+                <p class="sec_03_font_02">FREE</p>
+                <p class="sec_03_font_03">159,500원</p>
+            </div>
+            <div class="right-slide">
+                <span class="material-symbols-outlined">
+                    chevron_right
+                    </span>
+            </div>
+        </div>
+    </section>
+    <div class="gap_1400_80">&nbsp;</div>
+    <div class="gap_m_340_30">&nbsp;</div>
+    <!-- weekly best 제목 부분 시작 -->
+    <div class="title_weekly">
+        WEEKLY BEST
+    </div>
+    <div class="gap_1400_80">&nbsp;</div>
 </body>
 </html>
