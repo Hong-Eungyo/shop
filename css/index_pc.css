@@ -296,12 +296,14 @@ section.sec_01_all {
         font-size: 1rem;
         font-weight: bold;
         color: #757575;
+        margin-bottom: 10px;
     }
     .more {
+        width: 100%;
         position: absolute;
         right: 110px;
         top: 100px;
-        cursor: pointer;
+        text-align: right;
     }
 
 .sec_02_box_all {
@@ -328,7 +330,7 @@ section.sec_01_all {
     align-items: center;
     column-gap: 3px;
 }
-.color-palette > .color {
+.color {
     width: 25px;
     height: 5px;
     border: 1px solid #ddd;
@@ -349,13 +351,13 @@ section.sec_01_all {
         column-gap: 10px;
     }
 
-        .sec_02_font_03 > .original_price {
+        .original_price {
             font-size: 0.8rem;
             text-decoration: line-through;
             color: #aaa;
         }
 
-        .sec_02_font_03 > .discount {
+        .discount {
             color: rgb(255, 102, 0);
         }
     #sec_02_box .sec_02_font_04 {
@@ -368,7 +370,7 @@ section.sec_01_all {
         display: flex;
         justify-content: center;
         align-items: center; 
-          
+        color: #cccccc;
     }
 
     .left-slide > span {
@@ -382,6 +384,7 @@ section.sec_01_all {
         display: flex;
         justify-content: center;
         align-items: center;   
+        color: #cccccc;
     }
 
     .right-slide > span {
@@ -412,7 +415,6 @@ section.sec_01_all {
         }
         .sec_03_sub_title {
             font-size: 1rem;
-            margin-bottom: 70px;
             font-weight: bold;
             color: #757575;
         }
@@ -455,10 +457,182 @@ section.sec_01_all {
     clear: both;
     width: 100%;
     height: 50px;
-    color: #333;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     line-height: 50px;
     margin: 50px auto 30px;
-    background: #ddd;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0d0d0d;
 }
+
+/* 상품 시작 */
+section.product_row_all {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 1400px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+    .product_row_all > .product_col_each {
+        position: relative;
+        float: left;
+        width: 340px;
+        height: 450px;
+        margin-bottom: 50px;
+    }
+    /* 제품 이미지 */
+    .product_col_each > #p_box_img {
+        position: relative;
+        clear: both;
+        width: 340px;
+        height: 340px;
+    }
+    .product_col_each > #p_box_font_all {
+        position: relative;
+        clear: both;
+        width: 340px;
+        height: 110px;
+    }
+        /* 제품 색깔 */
+        #p_box_font_all > #p_box_color {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            gap : 5px;
+        }
+        #p_box_color > .color {
+            display: inline-block;
+            width: 23px;
+            height: 5px;
+            
+            border: 1px solid #ddd;
+        }
+        /* 제품 이름 */
+        #p_box_font_all > #p_box_font_01 {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        /*제품 사이즈 */
+        #p_box_font_all > #p_box_font_02 {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 0.7rem;
+            color: #aaa;
+        }
+        /* 제품 가격 */
+        #p_box_font_all > #p_box_font_03 {
+            position: relative;
+            clear: both;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            width: 340px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+        }
+        /* 리뷰 */
+        #p_box_font_all > #p_box_font_04 {
+            position: relative;
+            clear: both;
+            width: 340px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 0.8rem;
+            color: #333;
+        }
+    /* 중간 이미지 */
+    .middle_img {
+        position: relative;
+        clear: both;
+        width: 1400px;
+        height: 500px;
+        margin: 50px auto;
+        background: url(../img/middle_img_01.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    /* footer */
+    .footer_all {
+        position: relative;
+        clear: both;
+        width: 100%;
+        height: 310px;
+    }
+        .footer_box_all {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 1400px;
+            height: 310px;
+            margin: 0 auto;
+        }
+            .footer_box_each {
+                position: relative;
+                float: left;
+                width: 300px;
+                height: 310px;
+            }
+            .footer_box_each > #footer_box_01_01 {
+                position: relative;
+                clear: both;
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 1.2rem;
+                color: #333;
+            }
+            .footer_box_each > #footer_box_01_02 {
+                position: relative;
+                clear: both;
+                width: 100%;
+                height: 10px;
+                line-height: 10px;
+            }
+                #footer_box_01_02 > hr {
+                    width: 100px;
+                }
+            .footer_box_each > #footer_box_01_03 {
+                position: relative;
+                clear: both;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                font-size: 2rem;
+                color: #333;
+            }
+
+            .footer_box_each > #footer_box_01_04 {
+                position: relative;
+                clear: both;
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 1.1rem;
+                color: #333;
+            }
+            .footer_box_each > #footer_box_01_05 {
+                position: relative;
+                float: left;
+                width: 150px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                margin-top: 20px;
+            }
