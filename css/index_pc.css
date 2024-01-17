@@ -330,6 +330,7 @@ section.sec_01_all {
     align-items: center;
     column-gap: 3px;
 }
+/* 상품색상 */
 .color {
     width: 25px;
     height: 5px;
