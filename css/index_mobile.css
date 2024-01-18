@@ -404,65 +404,67 @@
         }
         /* 상품 시작 */
         section.product_row_all {
-            display: flex;
-            flex-flow: column nowrap;
             width: 340px;
             height: auto;
+            display: grid;
+            grid-template-columns: 340px;
+            grid-auto-rows: 450px;
+            row-gap: 50px;
             margin: 0 auto;
+            margin-bottom: 50px;
             border: 1px solid #333;
         }
             .product_row_all > .product_col_each {
-                position: relative;
-                clear: both;
                 width: 340px;
                 height: 450px;
-                margin-bottom: 50px;
+                display: grid;
+                grid-template-columns: 340px;
+                grid-template-rows: 340px, 110px;
+                
+               
             }
                 .product_col_each > #p_box_img {
-                    position: relative;
-                    clear: both;
                     width: 340px;
                     height: 340px;
                 }
                 .product_col_each > #p_box_font_all {
-                    position: relative;
-                    clear: both;
                     width: 340px;
                     height: 110px;
+                    display: grid;
+                    grid-template-columns: 340px;
+                    grid-template-rows: 20px, 30px, repeat(2, 20px);
+                    grid-template-areas: 
+                    "a"
+                    "b"
+                    "c"
+                    "d"
+                    "e";
                 }
                     #p_box_font_all > #p_box_color {
-                        position: relative;
-                        clear: both;
+                        grid-area: a;
                         width: 340px;
                         height: 20px;
+                        display: flex;
+                        align-items: center;
+                        gap : 5px;
                     }
 
                     #p_box_font_all > #p_box_font_01 {
-                        position: relative;
-                        clear: both;
-                        width: 340px;
-                        height: 30px;
+                        grid-area: b;
                         line-height: 30px;
                         font-size: 1rem;
                         font-weight: bold;
                         
                     }
                     #p_box_font_all > #p_box_font_02 {
-                        position: relative;
-                        clear: both;
-                        width: 340px;
-                        height: 20px;
+                        grid-area: c;
                         line-height: 20px;
                         font-size: 0.7rem;
                         color: #ddd;
                         
                     }
                     #p_box_font_all > #p_box_font_03 {
-                        position: relative;
-                        clear: both;
-                        
-                        width: 340px;
-                        height: 20px;
+                        grid-area: d;
                         line-height: 20px;
                         font-size: 1.1rem;
                         font-weight: bold;
@@ -470,10 +472,7 @@
                     }
 
                     #p_box_font_all > #p_box_font_04 {
-                        position: relative;
-                        clear: both;
-                        width: 340px;
-                        height: 20px;
+                        grid-area: e;
                         line-height: 20px;
                         font-size: 0.8rem;
                     }
@@ -485,6 +484,10 @@
         height: 250px;
         margin: 50px auto;
         background: url(../img/middle_img_mobile_01.jpg) no-repeat;
+        background-size: cover;
+    }
+    .middle_img02 {
+        background: url(../img/middle_img_mobile_02.jpg) no-repeat;
         background-size: cover;
     }
     /* footer */

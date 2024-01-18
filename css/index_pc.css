@@ -469,38 +469,49 @@ section.sec_01_all {
 
 /* 상품 시작 */
 section.product_row_all {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
     width: 1400px;
     height: 480px;
+    display: grid;
+    grid-template-columns: repeat(4, 340px);
+    grid-template-rows: 450px;
+    column-gap: 13px;
     margin: 0 auto;
 }
 
     .product_row_all > .product_col_each {
-        position: relative;
-        float: left;
         width: 340px;
         height: 450px;
-        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 340px;
+        grid-template-rows: 340px, 110px;
+        grid-template-areas: 
+        "img"
+        "text";
+       
     }
     /* 제품 이미지 */
     .product_col_each > #p_box_img {
-        position: relative;
-        clear: both;
+        grid-area: img;
         width: 340px;
         height: 340px;
     }
     .product_col_each > #p_box_font_all {
-        position: relative;
-        clear: both;
+        grid-area: text;
         width: 340px;
         height: 110px;
+        display: grid;
+        grid-template-columns: 340px;
+        grid-template-rows: repeat(20px, 30px), 20px;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
     }
         /* 제품 색깔 */
         #p_box_font_all > #p_box_color {
-            position: relative;
-            clear: both;
+            grid-area: a;
             width: 340px;
             height: 20px;
             display: flex;
@@ -516,8 +527,7 @@ section.product_row_all {
         }
         /* 제품 이름 */
         #p_box_font_all > #p_box_font_01 {
-            position: relative;
-            clear: both;
+            grid-area: b;
             width: 340px;
             height: 30px;
             line-height: 30px;
@@ -526,8 +536,7 @@ section.product_row_all {
         }
         /*제품 사이즈 */
         #p_box_font_all > #p_box_font_02 {
-            position: relative;
-            clear: both;
+            grid-area: c;
             width: 340px;
             height: 20px;
             line-height: 20px;
@@ -536,8 +545,7 @@ section.product_row_all {
         }
         /* 제품 가격 */
         #p_box_font_all > #p_box_font_03 {
-            position: relative;
-            clear: both;
+            grid-area: d;
             display: flex;
             align-items: center;
             column-gap: 10px;
@@ -550,8 +558,7 @@ section.product_row_all {
         }
         /* 리뷰 */
         #p_box_font_all > #p_box_font_04 {
-            position: relative;
-            clear: both;
+            grid-area: e;
             width: 340px;
             height: 20px;
             line-height: 20px;
@@ -566,6 +573,10 @@ section.product_row_all {
         height: 500px;
         margin: 50px auto;
         background: url(../img/middle_img_01.jpg) no-repeat;
+        background-size: cover;
+    }
+    .middle_img02 {
+        background: url(../img/middle_img_02.jpg) no-repeat;
         background-size: cover;
     }
 
