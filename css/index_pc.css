@@ -319,7 +319,6 @@ section.sec_01_all {
     flex-flow: column nowrap;
     width: 230px;
     height: 420px;
-    cursor: pointer;
 }
 
 .color-palette {
@@ -433,7 +432,6 @@ section.sec_01_all {
         flex-flow: column nowrap;
         width: 230px;
         height: 420px;
-        cursor: pointer;
     }
 
     #sec_03_box .sec_03_font_02 {
